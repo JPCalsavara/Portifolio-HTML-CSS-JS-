@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #92e0ff;
+    --secondary-color: #0013bd;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 1.2rem;
+    --background-color: #5703dd;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Empilha os blocos verticalmente */
+    justify-content: center; /* Alinha os blocos no centro vertical */
+    align-items: center; /* Alinha os blocos no centro horizontal */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    min-width: 75%;
+    padding: 2rem 15rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+header {
+    /* background-color: var(--background-color); */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixa o header na posição */
+    top: 0; /* Garante que ele fique no topo */
+    width: 100%; /* Faz o header ocupar toda a largura da página */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    padding: 0 15rem;
+    height: 5vw;
+}
+
+header nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav a {
+    color: var(--text-color);
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao hover */
+    font-size: 1.3rem;
+}
+
+header nav a:hover {
+    color: var(--primary-color); /* Altera a cor para a cor principal no hover */
+}
+
+header div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+header div h2{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem ;
+    gap: 2rem;
+    background-color: rgba(146, 224, 255, 0.1); /* Cor com opacidade reduzida */
+    border-radius: 2rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience{
+    background-color: var(--secondary-color);
+    border-radius: 1rem; /* Bordas arredondadas mais suaves */
+    padding: 1rem; /* Espaçamento interno para evitar que o conteúdo fique colado nas bordas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar o bloco */
+    height: 92vh;
+
+}
+
+.experience-info {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas de tamanhos iguais */
+    gap: 2rem; /* Espaçamento entre os itens */
+    padding: 2rem; /* Espaçamento interno */
+    align-items: flex-start; /* Centraliza os itens verticalmente */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.experience-info div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espaçamento entre os itens */
+    align-items: flex-start; /* Centraliza os itens verticalmente */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.experience-info div h2, h3{
+    text-align: center;
+}
+
+.experience-info img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
