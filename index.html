@@ -4,112 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Calsavara</title>
+    <link rel="icon" href="images/jc-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="" alt="">
-            <h2 class="header">JC</h2>
+            <!-- <img src="images/logo.png" alt="Logo"> -->
+            <h2 class="logo">JC</h2>
         </div>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Projetos</a>
-            <a href="">Habilidades</a>
-            <a href="">Experiências</a>
-            <a href="">Contato</a>
+        <nav id="menu" class="hidden">
+            <a href="#inicio">Inicio</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#contato">Contato</a>
         </nav>
+        <button id="menu-toggle" class="menu-button">☰</button>
     </header>
-    <section class="intro">
+    <section id="inicio" class="intro">
         <h1>Quem eu sou?</h1>
         <div class="intro-info">
             <div class="hero">
-                <img src="images/hero-img.jpg" alt="" class="hero-image">
+                <img src="images/hero-img.jpg" alt="Imagem do Herói" class="hero-image">
                 <div class="hero-social">
-                   <a href=""><img src="images/hero-img.jpg" alt=""></a>
-                   <a href=""><img src="images/hero-img.jpg" alt=""></a>
-                   <a href=""><img src="images/hero-img.jpg" alt=""></a>
+                    <a href="https://github.com/JPCalsavara" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-leite-calsavara-b951b6230/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+                    <!-- <a href="mailto:jpcalsavara@gmail.com"><img src="images/email-icon.svg" alt="Email"></a> -->
                 </div>
-                <a href="" class="hero-cv">Clique para CV</a>
+                <a href="files/curriculo.pdf" class="hero-cv" download="Curriculo_Joao_Calsavara.pdf">Clique para CV</a>
             </div>
             <div class="text">
                 <p>Meu nome é João Pedro Calsavara, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Meu propósito é impactar a sociedade por meio da criatividade e inovação na programação.<br>
-                    Minhas principais experiências incluem a Atria Jr, empresa júnior da Unicamp, onde atuei nas áreas de Marketing, Comercial e Tecnologia da Informação. Além disso, co-fundei o projeto de extensão Semea Code, que oferece aulas de programação em escolas públicas.<br>
-                    Durante minha trajetória acadêmica e profissional, desenvolvi habilidades como trabalho em equipe, aprendizado contínuo, resolução de problemas e análise de sistemas utilizando diagramas UML. Também adquiri conhecimentos em engenharia de software, programação orientada a objetos (POO) e tecnologias como Node.js, C e C++.
+                    Minhas principais experiências incluem a Atria Jr, empresa júnior da Unicamp, onde atuei nas áreas de Marketing, Comercial e Tecnologia da Informação.<br>
+                    Além disso, co-fundei o projeto de extensão Semea Code, que oferece aulas de programação em escolas públicas.<br>
+                    Durante minha trajetória acadêmica e profissional, desenvolvi habilidades como trabalho em equipe, aprendizado contínuo, resolução de problemas e análise de sistemas utilizando diagramas UML. <br>
+                    As tecnologias que tenho experiência são TypeScript, Python, C++ e C
                 </p>
             </div>
         </div>
+        <a href="#projetos" class="scroll-down">
+            ↓ Veja mais
+        </a>
     </section>
-    <section class="project">
+    <section id="projetos" class="project">
         <h1>Projetos</h1>
         <div class="project-info">
             <div class="project-card">
-                <h2>Atria Jr</h2>
-                <img src="images/AtriaExperiencia.jpeg" alt="">
+                <h2>Laranjada</h2>
+                <img src="images/AtriaExperiencia.jpeg" alt="Projeto Atria Jr">
                 <div class="tags">
+                    <p>TypeScript</p>
+                    <p>Next.js</p>
                     <p>React</p>
+                    <p>Tailwind</p>
+                    <p>Express</p>
+                    <p>MongoDB</p>
+                    <p>Prisma</p>
+                    <p>SOLID</p>
                 </div>
-                <p>Na Atria Jr., entendi como funciona uma empresa de verdade na prática atuando no TI, Marketing e Comercial. 
-                    Na área de projeto atuei com wordpress e hmtl/css num site em front-end e atuei com NNode.js, Express, Prisma ORM e MongoDB, aplicando arquitetura DDD (Domain-Driven Design) e princípios SOLID</p>
-                    <div class="link">
-                        <a href="">Veja o projeto</a>
-                        <a href="">Veja o repositório</a>
-                    </div>
+                <p>Rede social e de gerenciamento de encontros periódicos da universidade. <br>
+                    Suas principais funcionalidades são a criação e validação do login de usuário, contagem de laranjas, armazenamento das laranjas e ingredientes.<br>
+                    Novas funcionalidades são a criação de um método de pagamento, localizador e criador de receitas por IA.
+                </p>
+                <div class="link">
+                    <a href="#">Veja o projeto</a>
+                    <a href="#">Veja o repositório</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h2>Atria Jr</h2>
-                <img src="images/AtriaExperiencia.jpeg" alt="">
-                <div class="tags">
-                    <p>React</p>
-                </div>
-                <p>Na Atria Jr., entendi como funciona uma empresa de verdade na prática atuando no TI, Marketing e Comercial. 
-                    Na área de projeto atuei com wordpress e hmtl/css num site em front-end e atuei com NNode.js, Express, Prisma ORM e MongoDB, aplicando arquitetura DDD (Domain-Driven Design) e princípios SOLID</p>
-                    <div class="link">
-                        <a href="">Veja o projeto</a>
-                        <a href="">Veja o repositório</a>
-                    </div>
+            <!-- Repita o conteúdo do card para outros projetos -->
+        </div>
+    </section>
+    <section id="habilidades"class="skills">
+        <h1>Habilidades</h1>
+        <div class="skills-info">
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>HTML5</p>
             </div>
-            <div class="project-card">
-                <h2>Atria Jr</h2>
-                <img src="images/AtriaExperiencia.jpeg" alt="">
-                <div class="tags">
-                    <p>React</p>
-                </div>
-                <p>Na Atria Jr., entendi como funciona uma empresa de verdade na prática atuando no TI, Marketing e Comercial. 
-                    Na área de projeto atuei com wordpress e hmtl/css num site em front-end e atuei com NNode.js, Express, Prisma ORM e MongoDB, aplicando arquitetura DDD (Domain-Driven Design) e princípios SOLID</p>
-                    <div class="link">
-                        <a href="">Veja o projeto</a>
-                        <a href="">Veja o repositório</a>
-                    </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>CSS3</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>TypeScript</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>C</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>C++</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>Node.js</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>Prisma ORM</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>React</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>Tailwind</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>Solid</p>
+            </div>
+            <div class="skills-card">
+                <img src="images/hero-img.jpg" alt="">
+                <p>UML</p>
             </div>
         </div>
     </section>
-    <section class="experience">
+    <section id="experiencias" class="experience">
         <h1>Experiências</h1>
         <div class="experience-info">
             <div>
                 <h2>Atria Jr</h2>
                 <h3>Assessor de TI</h3>
-                <img src="images/AtriaExperiencia.jpeg" alt="">
+                <img src="images/AtriaExperiencia.jpeg" alt="Experiência Atria Jr">
                 <p>Na Atria Jr., entendi como funciona uma empresa de verdade na prática atuando no TI, Marketing e Comercial. 
-                    Na área de projeto atuei com wordpress e hmtl/css num site em front-end e atuei com NNode.js, Express, Prisma ORM e MongoDB, aplicando arquitetura DDD (Domain-Driven Design) e princípios SOLID</p>
+                    Na área de projeto atuei com WordPress e HTML/CSS num site em front-end e atuei com Node.js, Express, Prisma ORM e MongoDB, aplicando arquitetura DDD (Domain-Driven Design) e princípios SOLID.</p>
             </div>
             <div>
                 <h2>Semea Code</h2>
                 <h3>Co-fundador e Gerente Executivo</h3>
-                <img src="images/SemeaCodeExperiencia.jpeg" alt="">
-                <p>Co-fundador com meu professor lidando com documentação, contato com as escolas, recrutamento de membros, organização e realização das aulas e planejamento estratégico futuro.</p>
-                </div>
+                <img src="images/SemeaCodeExperiencia.jpeg" alt="Experiência Semea Code">
+                <p>Co-fundador com meu professor lidando com documentação, contato com as escolas, recrutamento de membros, organização e realização das aulas e planejamento estratégico futuro. <br>
+                   No primeiro semestre de 2025, impactamos a vida de 21 alunos ensinando Python para alunos do ensino médio <br>
+                   Temos missão poder impactar 50 estudantes semestralmente em 2026.
+                </p>
+            </div>
             <div>
                 <h2>Unicamp</h2>
                 <h3>Análise de Sistemas</h3>
-                <img src="images/UnicampExperiencia.jpeg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt vel repudiandae dolor quod? Rem esse illo animi consequatur incidunt fugiat eius recusandae! Explicabo molestias eius architecto beatae illo nesciunt ratione!</p>
+                <img src="images/UnicampExperiencia.jpeg" alt="Experiência Unicamp">
+                <p>Durante minha formação na Unicamp, desenvolvi habilidades em análise de sistemas, programação e trabalho em equipe, aplicando conceitos de engenharia de software e POO.</p>
             </div>
         </div>
     </section>
-    <section class="projects">
-        
+   
+    <section id="contato" class="contact">
+        <h1>Contato</h1>
+        <div class="contact-info">
+            <div class="contact-logos">
+                <a href="https://github.com/JPCalsavara" target="_blank" rel="noopener noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-leite-calsavara-b951b6230/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+                <!-- <a href="#"><img src="images/email-icon.svg" alt="Email"></a> -->
+             </div>
+             <div class="contact-cv">
+                 <a href="files/curriculo.pdf" download="Curriculo_Joao_Calsavara.pdf">Clique para CV</a>
+             </div>
+        </div>
+        <p>Direitos reservados @João Pedro Calsavara 2025</p>
     </section>
     <script src="script.js"></script>
 </body>
